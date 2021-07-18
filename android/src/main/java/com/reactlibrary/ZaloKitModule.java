@@ -113,7 +113,7 @@ public class ZaloKitModule extends ReactContextBaseJavaModule {
             public void onResult(JSONObject response) {
                 try {
                     final WritableMap data = Util.convertJsonToMap(response);
-                    if (data.hasKey("error")) {
+                    if (data.hasKey("error") & data.getInt("error") <0 & & data.getInt("error") <0) {
                         promise.reject(String.valueOf(data.getInt("error")), data.getString("message"));
                     } else {
                         promise.resolve(data);
@@ -133,7 +133,7 @@ public class ZaloKitModule extends ReactContextBaseJavaModule {
             public void onResult(JSONObject response) {
                 try {
                     final WritableMap data = Util.convertJsonToMap(response);
-                    if (data.hasKey("error")) {
+                    if (data.hasKey("error") & data.getInt("error") <0) {
                         promise.reject(String.valueOf(data.getInt("error")), data.getString("message"));
                     } else {
                         promise.resolve(data);
@@ -153,7 +153,7 @@ public class ZaloKitModule extends ReactContextBaseJavaModule {
             public void onResult(JSONObject response) {
                 try {
                     final WritableMap data = Util.convertJsonToMap(response);
-                    if (data.hasKey("error")) {
+                    if (data.hasKey("error") & data.getInt("error") <0) {
                         promise.reject(String.valueOf(data.getInt("error")), data.getString("message"));
                     } else {
                         promise.resolve(data);
@@ -172,7 +172,7 @@ public class ZaloKitModule extends ReactContextBaseJavaModule {
             public void onResult(JSONObject response) {
                 try {
                     final WritableMap data = Util.convertJsonToMap(response);
-                    if (data.hasKey("error")) {
+                    if (data.hasKey("error") & data.getInt("error") <0) {
                         promise.reject(String.valueOf(data.getInt("error")), data.getString("message"));
                     } else {
                         promise.resolve(data);
@@ -191,7 +191,7 @@ public class ZaloKitModule extends ReactContextBaseJavaModule {
             public void onResult(JSONObject response) {
                 try {
                     final WritableMap data = Util.convertJsonToMap(response);
-                    if (data.hasKey("error")) {
+                    if (data.hasKey("error") & data.getInt("error") <0) {
                         promise.reject(String.valueOf(data.getInt("error")), data.getString("message"));
                     } else {
                         promise.resolve(data);
@@ -216,7 +216,7 @@ public class ZaloKitModule extends ReactContextBaseJavaModule {
             public void onResult(JSONObject response) {
                 try {
                     final WritableMap data = Util.convertJsonToMap(response);
-                    if (data.hasKey("error")) {
+                    if (data.hasKey("error") & data.getInt("error") <0) {
                         promise.reject(String.valueOf(data.getInt("error")), data.getString("message"));
                     } else {
                         promise.resolve(data);
